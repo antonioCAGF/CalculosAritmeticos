@@ -1,7 +1,7 @@
 # CalculosAritmeticos
 Desenvolvendo um programa simples na linguagem Java afim de realizar cálculos aritméticos
 
-// Instagram: @pikdev_
+		// Instagram: @pikdev_
 
 		// Youtube: @Pikachu Gamer
 		
