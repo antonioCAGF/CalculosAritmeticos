@@ -13,21 +13,23 @@ public class CalculosAritmeticos {
 		// Exigindo valor via teclado para o usuário
 		Scanner keyboard = new Scanner(System.in);
 
+		VariaveisCalculo val = new VariaveisCalculo();
+
 		// função soma
 		System.out.println("----------------------------------------");
 		System.out.println("Função Soma iniciando...");
 		System.out.println("----------------------------------------");
 		System.out.println("Digite o primeiro valor para a soma: ");
 		System.out.println("----------------------------------------");
-		double somaX = keyboard.nextDouble();
+		val.somaX = keyboard.nextDouble();
 		System.out.println("----------------------------------------");
 		System.out.println("Digite um segundo valor para a soma: ");
-		double somaY = keyboard.nextDouble();
-		
-		//cálculo somar
-		double somaTotal = somaX + somaY;
+		val.somaY = keyboard.nextDouble();
+
+		// cálculo somar
+		val.somaTotal = val.somaX + val.somaY;
 		System.out.println("----------------------------------------");
-		System.out.println("A soma total foi igual a = " + somaTotal);
+		System.out.println("A soma total foi igual a = " + val.somaTotal);
 		System.out.println("----------------------------------------");
 		System.out.println("Função Soma realizada com sucesso");
 
@@ -36,16 +38,16 @@ public class CalculosAritmeticos {
 		System.out.println("Função Subtrair iniciando...");
 		System.out.println("----------------------------------------");
 		System.out.println("Digite o primeiro valor para a subtração: ");
-		double subtracaoX = keyboard.nextDouble();
+		val.subtracaoX = keyboard.nextDouble();
 		System.out.println("----------------------------------------");
 		System.out.println("Digite o segundo valor para a subtração: ");
-		double subtracaoY = keyboard.nextDouble();
-		
-		//cálculo subtração
-		double subtracaoTotal = subtracaoX - subtracaoY;
-		
+		val.subtracaoY = keyboard.nextDouble();
+
+		// cálculo subtração
+		val.subtracaoTotal = val.subtracaoX - val.subtracaoY;
+
 		System.out.println("----------------------------------------");
-		System.out.println("A subtração total foi igual a = " + subtracaoTotal);
+		System.out.println("A subtração total foi igual a = " + val.subtracaoTotal);
 		System.out.println("----------------------------------------");
 		System.out.println("Função Subtração realizada com sucesso");
 		System.out.println("----------------------------------------");
@@ -54,15 +56,15 @@ public class CalculosAritmeticos {
 		System.out.println("Função Multiplicar iniciando...");
 		System.out.println("----------------------------------------");
 		System.out.println("Digite o primeiro valor para a multiplicação: ");
-		double multiplicarX = keyboard.nextDouble();
+		val.multiplicarX = keyboard.nextDouble();
 		System.out.println("----------------------------------------");
 		System.out.println("Digite o segundo valor para a multiplicação: ");
-		double multiplicarY = keyboard.nextDouble();
+		val.multiplicarY = keyboard.nextDouble();
 
-		//cálculo multiplicação
-		double multiplicarTotal = multiplicarX + multiplicarY;
+		// cálculo multiplicação
+		val.multiplicarTotal = val.multiplicarX + val.multiplicarY;
 		System.out.println("----------------------------------------");
-		System.out.println("A multiplicação total foi igual a = " + multiplicarTotal);
+		System.out.println("A multiplicação total foi igual a = " + val.multiplicarTotal);
 		System.out.println("----------------------------------------");
 		System.out.println("Função Multiplicação realizada com sucesso");
 
@@ -72,14 +74,14 @@ public class CalculosAritmeticos {
 		System.out.println("----------------------------------------");
 
 		System.out.println("Digite o primeiro valor para a divisão: ");
-		double divX = keyboard.nextDouble();
+		val.divisaoX = keyboard.nextDouble();
 		System.out.println("Digite o segundo valor para a divisão: ");
-		double divY = keyboard.nextDouble();
+		val.divisaoY = keyboard.nextDouble();
 		System.out.println("----------------------------------------");
 
-		//cálculo divisão
-		double divTotal = divX / divY;
-		System.out.println("A divisão total foi igual a = " + divTotal);
+		// cálculo divisão
+		val.divisaoTotal = val.divisaoX / val.divisaoY;
+		System.out.println("A divisão total foi igual a = " + val.divisaoTotal);
 		System.out.println("----------------------------------------");
 		System.out.println("Função Divisão realizada com sucesso");
 		System.out.println("----------------------------------------");
